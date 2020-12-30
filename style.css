@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+body {
+  background: url(../03\ images/design.png) no-repeat left top;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 112px 0 0 250px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+li {
+  padding: 62px;
+  list-style-type: none;
+}
+li:first-child{
+  padding-left: 0;
+
+}
+a {
+  font-family: Rubik medium;
+  font-size: 58.21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3333cc;
+  padding-right: 0;
+}
+main {
+  display: flex;
+}
+main > div{
+  width: 1820px;
+}
+.banner{
+  padding: 0;
+  margin: 310px 0 0 238px;
+  font-family: Rubik;
+  color: #3333cc;
+  font-size: 248.15px ;
+  line-height:232.65px ;
+}
+.discription {
+  margin: 52px 0 0 250px;
+  padding: 0;
+  width: 1371.31px;
+  font-family: Rubik medium;
+  font-size: 50.3px;
+  line-height: 59.87px;
+  color: #de473c;
+}
+button {
+  width: 457px;
+  height: 160px;
+  font-family: Rubik regular;
+  font-size: 58.34px;
+  text-transform: uppercase;
+  border: none;
+  color: whitesmoke;
+  margin: 58px 0 0 253px;
+  background: none;
+}
+.photo {
+  position: relative;
+} 
+.photo > img {
+  position: absolute;
+  top: -192px;
+}
