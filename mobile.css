@@ -1,19 +1,26 @@
 @media (min-width: 640px) {
-  .logo :last-child {
+  .logo {
   display: none;
   }
 }
 @media (max-width: 640px) {
-  .logo > img {
-    display: none;
-  }
-  .logo > div > input {
-    display: none;
-  }
   li {
     display: none;
   }
 .logo > div > label > img {
   z-index: 10;
-}
+  }
+  input {
+    display: none;
+  } 
+  nav > div > .icon {
+    grid-template-columns: 2fr;
+    padding-left: 12px;
+  }
+  nav > div > .icon > div:first-child {
+    grid-template-columns: 2fr;
+  }
+  nav > div > .icon > div:last-child {
+    grid-template-columns: 2fr;
+  }
 }
