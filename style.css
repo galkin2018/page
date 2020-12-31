@@ -1,73 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@font-face {
+  font-family: Rubik-Bold;
+  src:url("Rubik-Bold.woff") format("woff"),
+      url("Rubik-Bold.woff2") format("woff2"),
+      url("Rubik-Bold.eot") format("eot"),
+      url("Rubik-Bold.ttf") format("ttf");
+}
 body {
-  background: url(../03\ images/design.png) no-repeat left top;
-  margin: 0;
-  padding: 0;
+margin: 0;
+background: url(ny.jpg)no-repeat center top, rgb(60, 0, 0);;
+background-size: cover;
+overflow: auto;
+width: 100%;
 }
-nav {
-  margin: 0;
-  padding: 0;
+/**Header**/
+nav > div {
+display: grid;
+grid-template-columns: 70px 5fr 5fr;
+background: rgb(60, 0, 0);
+padding: 0 10vw;
 }
-ul {
-  margin: 112px 0 0 250px;
-  padding: 0;
-  display: flex;
-  align-items: center;
+nav > div > .logo {
+display: grid;
+justify-content: center;
+align-items: center;
 }
-li {
-  padding: 62px;
-  list-style-type: none;
+nav > div > .menu > ul {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+list-style-type: none;
 }
-li:first-child{
-  padding-left: 0;
+nav > div > .menu > ul > li > a {
+font-family: Rubik-Bold;
+padding: 30px 5px;
+font-size: 11px;
+text-transform: uppercase;
+text-decoration: none;
+color:mistyrose;
 
 }
-a {
-  font-family: Rubik medium;
-  font-size: 58.21px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #3333cc;
-  padding-right: 0;
+nav > div > .icon {
+display: grid;
+grid-template-columns: 4fr 1fr;
 }
-main {
-  display: flex;
+nav > div > .icon > div:first-child {
+display: grid;
+grid-template-columns:30px 30px 30px 30px;
+justify-content: end;
+align-items: center;
 }
-main > div{
-  width: 1820px;
+nav > div > .icon > div:last-child {
+display: grid;
+justify-content: center;
+align-items: center;
 }
-.banner{
-  padding: 0;
-  margin: 310px 0 0 238px;
-  font-family: Rubik;
-  color: #3333cc;
-  font-size: 248.15px ;
-  line-height:232.65px ;
-}
-.discription {
-  margin: 52px 0 0 250px;
-  padding: 0;
-  width: 1371.31px;
-  font-family: Rubik medium;
-  font-size: 50.3px;
-  line-height: 59.87px;
-  color: #de473c;
-}
-button {
-  width: 457px;
-  height: 160px;
-  font-family: Rubik regular;
-  font-size: 58.34px;
-  text-transform: uppercase;
-  border: none;
-  color: whitesmoke;
-  margin: 58px 0 0 253px;
-  background: none;
-}
-.photo {
-  position: relative;
-} 
-.photo > img {
-  position: absolute;
-  top: -192px;
+nav > div > .icon > div > a > i {
+text-decoration: none;
+color:mistyrose;
 }
