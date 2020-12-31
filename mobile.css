@@ -1,5 +1,19 @@
-@media (max-width: 1150px) {
+@media (min-width: 640px) {
+  .logo :last-child {
+  display: none;
+  }
+}
+@media (max-width: 640px) {
+  .logo > img {
+    display: none;
+  }
+  .logo > div > input {
+    display: none;
+  }
   li {
     display: none;
   }
+.logo > div > label > img {
+  z-index: 10;
+}
 }
