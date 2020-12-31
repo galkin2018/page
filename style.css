@@ -9,24 +9,17 @@
 }
 body {
 margin: 0;
-background: url(https://god-byka.ru/wp-content/uploads/2020/07/052_2-1536x960.jpg)no-repeat center top, rgb(60, 0, 0);
-background-size: cover;
-overflow: auto;
+background: linear-gradient(to bottom,#3c0000, #070707 65px, #070707, #200000, black ) no-repeat;
 width: 100%;
 }
 /**Header**/
 nav > div {
 display: grid;
-grid-template-columns: 70px 7fr 3fr;
-background: rgb(60, 0, 0);
-padding: 0;
+grid-template-columns: 2fr 7fr;
+padding: 0 5vw;
 height: 55px;
 align-items: center;
-}
-nav > div > .logo {
-display: grid;
 justify-content: center;
-align-items: center;
 }
 nav > div > .menu > ul {
 display: grid;
@@ -39,7 +32,7 @@ margin: 0;
 nav > div > .menu > ul > li {
 text-align: center;
 border-bottom: 2px transparent solid ;
-padding: 10px 3px;
+padding: 10px 8px;
 }
 nav > div > .menu > ul > li > a {
 font-family: Rubik-Bold;
@@ -69,7 +62,7 @@ align-items: center;
 }
 nav > div > .icon > div:last-child {
 display: grid;
-justify-content: center;
+justify-content: end;
 align-items: center;
 }
 nav > div > .icon > div > a > i {
@@ -86,4 +79,17 @@ nav > div > .icon > div > a > i:hover {
   box-sizing: border-box;
 }
 
+.banner {
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  background: url("https://ae01.alicdn.com/kf/UT8yZCDXZdbXXagOFbXq.jpg") no-repeat center center;
+}
+footer {
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  z-index: 10;
+  background: black;
 
+}
