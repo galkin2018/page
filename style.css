@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @font-face {
   font-family: Rubik-Bold;
+  font-weight: 700;
   src:url("Rubik-Bold.woff") format("woff"),
       url("Rubik-Bold.woff2") format("woff2"),
       url("Rubik-Bold.eot") format("eot"),
@@ -15,9 +17,11 @@ width: 100%;
 /**Header**/
 nav > div {
 display: grid;
-grid-template-columns: 70px 5fr 5fr;
+grid-template-columns: 70px 7fr 3fr;
 background: rgb(60, 0, 0);
-padding: 0 10vw;
+padding: 0;
+height: 55px;
+align-items: center;
 }
 nav > div > .logo {
 display: grid;
@@ -28,15 +32,30 @@ nav > div > .menu > ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 list-style-type: none;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+nav > div > .menu > ul > li {
+text-align: center;
+border-bottom: 2px transparent solid ;
+padding: 10px 3px;
 }
 nav > div > .menu > ul > li > a {
 font-family: Rubik-Bold;
-padding: 30px 5px;
+padding: 15px 3px;
 font-size: 11px;
 text-transform: uppercase;
 text-decoration: none;
 color:mistyrose;
-
+text-align: center;
+}
+nav > div > .menu > ul > li:hover {
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  border-bottom: 2px  mistyrose solid ;
+  text-align: center;
+  box-sizing: border-box;
 }
 nav > div > .icon {
 display: grid;
@@ -56,4 +75,15 @@ align-items: center;
 nav > div > .icon > div > a > i {
 text-decoration: none;
 color:mistyrose;
+border-bottom: 2px transparent solid ;
+padding: 5px 3px;
 }
+nav > div > .icon > div > a > i:hover {
+  transition-duration: 300ms;
+  transition-delay: 50ms;
+  border-bottom: 2px  mistyrose solid ;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
