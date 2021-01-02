@@ -1,26 +1,11 @@
-@media (min-width: 640px) {
-  .logo {
-  display: none;
-  }
-}
 @media (max-width: 640px) {
-  li {
-    display: none;
+  nav > div {
+    display: block;
   }
-.logo > div > label > img {
-  z-index: 10;
-  }
-  input {
-    display: none;
-  } 
   nav > div > .icon {
-    grid-template-columns: 2fr;
-    padding-left: 12px;
+    padding: 5px 0;
   }
-  nav > div > .icon > div:first-child {
-    grid-template-columns: 2fr;
-  }
-  nav > div > .icon > div:last-child {
-    grid-template-columns: 2fr;
+  a {
+    text-shadow: 2px 2px 3px #6fc4fd;
   }
 }
