@@ -1,95 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @font-face {
+  font-family: Rubik-Black;
+  src:url(../04_fonts/Rubik-Black.woff) format("woff"),
+      url(../04_fonts/Rubik-Black.woff2) format("woff2"),
+      url(../04_fonts/Rubik-Black.eot) format("eot"),
+      url(../04_fonts/Rubik-Black.ttf) format("ttf");
   font-family: Rubik-Bold;
-  font-weight: 700;
-  src:url("Rubik-Bold.woff") format("woff"),
-      url("Rubik-Bold.woff2") format("woff2"),
-      url("Rubik-Bold.eot") format("eot"),
-      url("Rubik-Bold.ttf") format("ttf");
+  src:url(../04_fonts/Rubik-Bold.woff) format("woff"),
+      url(../04_fonts/Rubik-Bold.woff2) format("woff2"),
+      url(../04_fonts/Rubik-Bold.eot) format("eot"),
+      url(../04_fonts/Rubik-Bold.ttf) format("ttf");
 }
 body {
-margin: 0;
-background: linear-gradient(to bottom,#3c0000, #070707 65px, #070707, #200000, black ) no-repeat;
-width: 100%;
+  margin: 0;
+  background: url(../03_images/геометрия.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
 }
-/**Header**/
+/*Header*/
 nav > div {
-display: grid;
-grid-template-columns: 2fr 7fr;
-padding: 0 5vw;
-height: 55px;
-align-items: center;
-justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  height: 45px;
+  background: linear-gradient(to bottom,#b2e3ff ,#b2e3ff 30px, #75d8ff) no-repeat;
+  padding: 0;
+
 }
+/*Menu*/
 nav > div > .menu > ul {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-list-style-type: none;
-align-items: center;
-padding: 0;
-margin: 0;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 nav > div > .menu > ul > li {
-text-align: center;
-border-bottom: 2px transparent solid ;
-padding: 10px 8px;
+  border-bottom: 2px transparent solid ;
+  padding: 10px 0 10px 1vmin;
 }
 nav > div > .menu > ul > li > a {
-font-family: Rubik-Bold;
-padding: 15px 3px;
-font-size: 11px;
-text-transform: uppercase;
-text-decoration: none;
-color:mistyrose;
-text-align: center;
+  font-family: Rubik-bold;
+  font-size: 13px;
+  color:#45455a;
+  text-shadow: 2px 2px 2px #6fc4fd;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 1vmin;
 }
 nav > div > .menu > ul > li:hover {
-  transition-duration: 300ms;
-  transition-delay: 50ms;
-  border-bottom: 2px  mistyrose solid ;
-  text-align: center;
-  box-sizing: border-box;
+  transition-duration: 700ms;
+  border-bottom: 2px #45455a solid;
 }
+/*icon*/
 nav > div > .icon {
-display: grid;
-grid-template-columns: 4fr 1fr;
+  display: grid;
+  justify-content: end;
 }
-nav > div > .icon > div:first-child {
-display: grid;
-grid-template-columns:30px 30px 30px 30px;
-justify-content: end;
-align-items: center;
-}
-nav > div > .icon > div:last-child {
-display: grid;
-justify-content: end;
-align-items: center;
+nav > div > .icon > div {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 30px 30px 30px 30px 60px;
 }
 nav > div > .icon > div > a > i {
-text-decoration: none;
-color:mistyrose;
-border-bottom: 2px transparent solid ;
-padding: 5px 3px;
+  text-decoration: none;
+  color:#45455a; ;
+  padding: 5px 1vmin;
 }
 nav > div > .icon > div > a > i:hover {
   transition-duration: 300ms;
-  transition-delay: 50ms;
-  border-bottom: 2px  mistyrose solid ;
-  text-align: center;
-  box-sizing: border-box;
+  transform: scale(1.3) ;
 }
-
+main {
+  padding: 30px 10px;
+}
 .banner {
-  width: 85%;
-  height: 400px;
-  margin: 0 auto;
-  background: url("https://ae01.alicdn.com/kf/UT8yZCDXZdbXXagOFbXq.jpg") no-repeat center center;
+display: grid;
+justify-items: center;
+align-items: center;
+grid-template-columns: 1fr 2fr 6fr 2fr;
+grid-row: 1fr;
+gap: 20px;
 }
-footer {
+.banner > div {
+  background: #fff;
   width: 100%;
-  height: 500px;
-  position: fixed;
-  z-index: 10;
-  background: black;
-
+  height:100px;
+  border-radius: 15px;
+  border: 1px #84ceff solid;
 }
